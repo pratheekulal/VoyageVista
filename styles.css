@@ -1,0 +1,337 @@
+
+* {
+    margin: 0;
+    padding-left: 0;
+    }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  header {
+    background: rgb(74, 6, 74);
+    color: #fff;
+    }
+  
+  nav {
+    background-color: rgb(74, 6, 74);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 1rem;
+    }
+  
+  nav .logo {
+    font-size: 1.5rem;
+    }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-left: 2rem;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .hero {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .hero .btn {
+    padding: 1rem 2rem;
+    background: black;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  .btn:hover {
+    background-color: rgb(218, 115, 220);
+  }
+  
+  .content-section {
+    padding: 4rem 0;
+    text-align: center;
+  }
+  
+  #destinations .destination-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .destination-card {
+    background: #f4f4f4;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    width: 300px;
+  }
+  
+  .destination-card img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  #tours .tour-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .tour-item {
+    background: #f4f4f4;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    width: 300px;
+    text-align: left;
+  }
+  
+  form {
+    max-width: 600px;
+    margin: 2rem auto;
+    text-align: left;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  form button {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  footer {
+    background: rgb(74, 6, 74);
+    color: #000000;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    width: 100%;
+    margin-top: auto;
+  }
+  
+  .forcolor{
+    background-color: rgb(68, 3, 68);
+  }
+  
+  
+  .about {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .about-img {
+    flex: 1;
+    max-width: 50%;
+    padding-right: 20px; 
+  }
+  
+  .about-img img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .about-info {
+    flex: 2;
+    max-width: 50%;
+  }
+  
+  .about-info h6 {
+    margin-bottom: 10px;
+    font-weight: 400;
+    color: #e55d00;
+  }
+  
+  .about-info h3 {
+    margin-bottom: 15px;
+  }
+  
+  .about-info p {
+    margin-bottom: 20px;
+  }
+  
+  .about-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .about-btn:hover {
+    background-color: rgb(115, 78, 9);
+  }
+  .book {
+    display: flex;
+    padding: 50px 20px;
+    background: #f9f9f9;
+    align-items: center;
+    background-color:rgb(74, 6, 74) ;
+  }
+  
+  .book .book-img img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+  }
+  
+  .book .book-form {
+    padding-left: 30px;
+  }
+  
+  .book .book-form h5 {
+    font-size: 24px;
+    color: #ff6600;
+    margin-bottom: 10px;
+  }
+  
+  .book .book-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .book .book-form form input,
+  .book .book-form form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .book .book-form form .submit {
+    padding: 10px 20px;
+    border: none;
+    background: #ff6600;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .book .book-form form .submit:hover {
+    background: #e55d00;
+  }
+  .services {
+    padding: 50px 20px;
+    background: rgb(74, 6, 74);
+    text-align: center;
+  }
+  
+  .services .heading h3 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #ff6600;
+  }
+  
+  .services .card-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .services .row {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(25% - 20px);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .services .row i {
+    font-size: 40px;
+    color: #ff6600;
+    margin-bottom: 20px;
+  }
+  
+  .services .row h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .services .row p {
+    font-size: 16px;
+  }
+  
+  .popup {
+    display: none; 
+    position: fixed;
+    z-index: 1000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: orange;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .popup h3 {
+    margin: 0;
+    color: white;
+  }
+  
+  .popup button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    background: #ff6600;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+  }

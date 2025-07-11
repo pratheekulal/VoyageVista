@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoyageVista</title>
+    
+    <link rel="shortcut icon" href="https://img.icons8.com/?size=48&id=86678&format=png">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css"/>
+
+     
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+     
+</head>
+<body>
+   
+<header>
+    <nav>
+        <img src="https://img.icons8.com/?size=48&id=86678&format=png" alt="logo">
+        <div class="logo">VoyageVista</div>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#tours">Tours</a></li>
+            <li><a href="#forscroll">Contact</a></li>
+            <li><a href="#services">Services</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="home">
+    <div class="hero" style="background-image: url('images/b1.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+        <h1>Welcome to VoyageVista</h1>
+        <p>Your adventure starts here.</p>
+        <a href="#destinations" class="btn">Explore Destinations</a>
+    </div>
+</section>
+<div class="forcolor">
+<section id="destinations" class="content-section">
+    <h2 style="color: white;">Popular Destinations</h2>
+    <div class="destination-grid">
+        
+        <div class="destination-card">
+            <img src="images/image.png" alt="Paris">
+            <h3>Paris</h3>
+            <p>The city of lights.</p>
+        </div>
+        <div class="destination-card">
+            <img src="images/cathedral.jpg" alt="Cathedral">
+            <h3>Cathedral</h3>
+            <p>A beautiful cathedral.</p>
+        </div> 
+        <div class="destination-card">
+            <img src="images/mountains.jpg" alt="Mountains">
+            <h3>Mountains</h3>
+            <p>Stunning mountain views.</p>
+        </div> 
+        <div class="destination-card">
+            <img src="images/city.jpg" alt="City">
+            <h3>City</h3>
+            <p>A vibrant city life.</p>
+        </div> 
+    </div>
+</section>
+
+<section id="tours" class="content-section">
+    <h2>Available Tours</h2>
+    <div class="tour-list">
+        <div class="tour-item">
+            <h3>European Escapade</h3>
+            <p>Duration: 10 days</p>
+            <p>Price: $2000</p>
+        </div>
+        <div class="tour-item">
+            <h3>Asian Adventure</h3>
+            <p>Duration: 15 days</p>
+            <p>Price: $2500</p>
+        </div>
+        <div class="tour-item">
+            <h3>South American Journey</h3>
+            <p>Duration: 12 days</p>
+            <p>Price: $2200</p>
+        </div>
+        <div class="tour-item">
+            <h3>African Safari</h3>
+            <p>Duration: 7 days</p>
+            <p>Price: $1800</p>
+        </div>
+    </div>
+</section>
+
+<section class="book" id="book" >
+    <div class="book-img">
+        <img src="images/book-img.png" alt="">
+    </div>
+    <div class="book-form">
+        <h5>BOOK YOUR DESTINATION</h5>
+        <form id="bookingForm" action="submit_booking.php" method="POST">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <input type="text" id="destination" name="destination" placeholder="Destination" required>
+            <input type="date" id="date" name="date" required>
+            <input type="submit" value="Book Now" class="submit" required>
+        </form>
+    </div>
+</section>
+
+<div id="popup" class="popup" style="display: none;">
+    <h3>Your booking is successful!</h3>
+    <button onclick="closePopup()">Close</button>
+</div>
+
+  <section class="services" id="services">
+    <div class="heading">
+        <h3>Services</h3>
+    </div>
+        <div class="card-content">
+            <div class="row">
+                <i class="fas fa-globe-asia"></i>
+                <div class="card-body">
+                    <h3>Around The World</h3>
+                    <p>Explore destinations across the globe with our expertly curated travel packages. From the bustling streets of Tokyo to the serene beaches of the Maldives, we offer experiences for every kind of traveler.</p>
+                </div>
+            </div>
+            <div class="row">
+                <i class="fas fa-plane"></i>
+                <div class="card-body">
+                    <h3>Fastest Travel</h3>
+                    <p>Travel with ease and comfort with our fast travel arrangements. We ensure you get to your destination quickly and smoothly, making the most of your precious time.</p>
+                </div>
+            </div>
+            <div class="row">
+                <i class="fas fa-hotel"></i>
+                <div class="card-body">
+                    <h3>Affordable Hotels</h3>
+                    <p>Stay at top-rated hotels without breaking the bank. We partner with hotels worldwide to bring you the best deals, ensuring you have a comfortable stay at an affordable price.</p>
+
+                </div>
+            </div>
+            <div class="row">
+                <i class="fas fa-bullhorn"></i>
+                <div class="card-body">
+                    <h3>Safety Guide</h3>
+                    <p>Your safety is our priority. We provide comprehensive safety guides for all destinations, including health tips, travel advisories, and local emergency contacts.</p>
+
+                </div>
+            </div>
+
+        </div>
+</section>
+
+<section class="about" id="about">
+    <div class="about-img">
+        <img src="images/about-img.png" alt="About Us Image">
+    </div>
+    <div class="about-info">
+        <h6 >About Us</h6>
+        <h3>How Our Travel Agency Works</h3>
+        <p> At Tourist Episode, we believe that every journey tells a story. Our mission is to create unforgettable travel experiences by connecting you with the most exciting destinations and hidden gems around the world.</p>
+        <button class="about-btn">Read More...</button>
+    </div>
+</section>
+
+<footer id="forscroll" >
+    <p>&copy; 2024 VoyageVista. All rights reserved.</p>
+    <p>Contact us +91152366662</p>
+</footer>
+</div>
+<script src="main.js"></script> 
+    
+</body>
+</html>
